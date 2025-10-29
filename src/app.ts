@@ -7,3 +7,5 @@ app.use(express.json());
 app.use(cookieParser());
 
 
+app.use('/api/users', require('./routes/user.route'));
+app.use('/api/blogs', require('./routes/blog.route'));
